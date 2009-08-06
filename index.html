@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			Scott Jungling - Resume
+		</title>
+		<style type="text/css" media="screen">
+		/*<![CDATA[*/
+			@import url("http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css");
+			@import url("http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/base/base-min.css");
+			
+			/*=Global
+			*****************************************************************************/
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      #yui-main .yui-b {
+        padding-right: 1.5em;
+      }
+      h2 {
+        border-bottom: 1px solid #ccc;
+        font-size: 182%;
+        letter-spacing: -.01em;
+        margin-bottom: .125em;
+        padding-left: .125em;
+      }
+
+      h3 {
+        font-size: 138.5%;
+        margin: .5em 0 .25em;
+      }
+
+      ul,li {
+        margin: 0;
+        padding: 0;
+      }
+      ul ul {
+        margin-left: 2em;
+      }
+      li {
+        line-height: 1.5;
+      }
+			
+			/*=vcard
+			*****************************************************************************/
+			div#hd div.yui-u{
+        vertical-align: bottom;
+			}
+      .vcard div, .vcard p {
+        margin: 0;
+      }
+      h1.fn {
+        margin: 0 0 .125em;
+      }
+			h1.fn .givenname, h1.fn .surname {
+			  line-height:.9;
+			  font-size: 197%;
+			}
+			
+			/*=Experience
+			*****************************************************************************/
+			.project-links {margin:1.5em 0;}
+			.project-links h4 {font-size:108%;}
+			
+			/*=Education
+			*****************************************************************************/
+      div#education p {
+        margin-bottom: 0;
+      }
+      li.expandable {
+        border-bottom :1px dotted #ccc;
+      }
+      li.expandable:hover {
+        cursor: pointer;
+      }
+      li.expandable:hover ul {
+        cursor: default;
+      }
+
+			/*=Projects
+			*****************************************************************************/
+      .project-thumb {
+        display: inline-block;
+        text-align: center;
+      }
+
+      .project-thumb:hover {
+        background: #efefef;
+      }
+      .project-thumb img {
+        width: 72px;
+        height: 72px;
+        border: 1px solid #ccc;
+        margin: .5em .5em 0 .5em;
+        vertical-align: bottom;
+        background-repeat: no-repeat;
+        display:block;
+      }
+      .project-thumb a {
+        font-size: 77%;
+      }
+		/*]]>*/
+		</style>
+		<script src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript" charset="utf-8">
+			google.load("jquery","1")
+			google.setOnLoadCallback(function(){
+        initExpandables();
+        initProjectThumbnails();
+			});
+			function initProjectThumbnails(){
+        // 
+			};
+			function initExpandables(){
+			  $('.expandable').click(function(){
+          respondToClick(this);
+			  });
+				hideExpandables();
+			};
+			function hideExpandables(){
+        $('.expandable ul').toggle();
+			};
+			function respondToClick(event){
+        $(event).children('ul').toggle();
+			}
+		</script>
+	</head>
+	<body>
+		<div id="doc4" class="yui-t6">
+			<div id="hd" class="vcard">
+  				<h1 class="fn">
+  					<span class="givenname">Scott</span> <span class="surname">Jungling</span>
+  				</h1>
+  				<div class="adr">
+  					<p class="street-address">
+  						492 Panama Ave.
+  					</p>
+  					<p>
+  						<span class="locality">Chico</span>, <span class="region">CA</span>, <span class="postal-code">95973</span>
+  					</p>
+  				</div>
+  				<div>
+  					<p class="email">
+  						<a href="mailto:&#x73;&#x63;&#x6F;&#x74;&#x74;&#x2E;&#x6A;&#x75;&#x6E;&#x67;&#x6C;&#x69;&#x6E;&#x67;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">scott.jungling@gmail.com</a>
+  					</p>
+  					<p class="tel">
+  						530.924.4280
+  					</p>
+  				</div>
+			</div>
+			<div id="bd">
+				<div id="yui-main">
+					<div class="yui-b">
+						<h2>
+							Objective
+						</h2>
+						<p>
+							Seeking an opportunity to continue to build upon my years of experience designing clean, simple, &amp; accessible web solutions.
+						</p>
+						<h2>
+							Experience
+						</h2>
+						<h3>
+							California State University, Chico
+						</h3>
+						<h4>
+							Information Technology Consultant
+						</h4>
+						<p>
+							January 2006&mdash;Present
+						</p>
+						<ul>
+							<li>Worked with clients to designed, developed, deployed, maintain, and support multiple Ruby on Rails applications for both internal and external audiences
+							</li>
+							<li>Extended open source solutions for automating the migration of student accounts to Google Apps.
+							</li>
+							<li>Maintain and support a mixed collection of Perl and PHP web applications.
+							</li>
+							<li>Piloted, supported, and promoted the use of enterprise wikis, issue tracking, source code management, and instant messaging to encourage collaboration between staff.
+							</li>
+							<li>Implemented and provided web analytics reports with Google Analytics to improve data-driven decisions.
+							</li>
+							<li>Worked with web team to devise a multi-year plan to ensure accessibility on campus web sites.
+							</li>
+							<li>Oversaw a collection of web application servers running under Apache &amp; Tomcat on Red Hat servers.
+							</li>
+							<li>Manage Google Search Appliance and custom web interface for search results.
+							</li>
+							<li>Perform webmaster duties including answering support questions, monitoring web traffic, cleaning up old content, and configuring Apache for new sites.
+							</li>
+						</ul>
+						<h3>
+							California State University, Chico
+						</h3>
+						<h4>
+							Web Developer
+						</h4>
+						<p>
+							October 2004&mdash;April 2005
+						</p>
+						<ul>
+							<li>Worked with designers to develop accessible &amp; standards compliant web portal interface
+							</li>
+							<li>Developed a solution for collating, analyzing, and reporting on web portal usage and performance.
+							</li>
+							<li>Designed, developed, and trained staff on using MovableType to manage and syndicate web content.
+							</li>
+							<li>Evaluated and worked with staff to implement a new web-based e-mail client.
+							</li>
+							<li>Re-designed the web interface of the single sign-on server to improve accessibility and usability.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="yui-b">
+				  <div id="projects">
+					  <h2>
+						  Projects
+						</h2>
+            <ul>
+              <li class="project-thumb" id="project-events">
+                <a href="http://events.csuchico.edu">
+                  <img src="./images/events-square.png" alt="Campus Events">
+                  Events Calendar
+                </a>
+              </li>
+              <li class="project-thumb" id="project-portal">
+                <a href="https://portal.csuchico.edu">
+                  <img src="./images/portal-square.png" alt="CSUC Portal">
+                  Portal
+                </a>
+              </li>
+              <li class="project-thumb" id="project-cas">
+                <a href="https://cas.csuchico.edu/cas/login">
+                  <img src="./images/cas-square.png" alt="CAS Login"> 
+                  <abbr title="Central Authentication Service">CAS</abbr> <abbr title="single sign-on">SSO</abbr>
+                </a>
+              </li>
+              <li class="project-thumb" id="project-search">
+                <a href="http://search.csuchico.edu">
+                  <img src="./images/search-square.png" alt="Campus Search"> 
+                  Search
+                </a>
+              </li>
+              <li class="project-thumb" id="project-mobile">
+                <a href="http://mobile.csuchico.edu">
+                  <img src="./images/mobile-square.png" alt="Chico State Mobile"> 
+                  Chico State Mobile
+                </a>
+              </li>
+            </ul>
+					</div>
+					
+					<div id="skills">
+						<h2>
+							Skills
+						</h2>
+						<ul>
+							<li class="expandable">Web
+							    <ul>
+							    	<li>HTML
+							    	</li>
+							    	<li>CSS
+							    	</li>
+							    	<li>Javascript
+							    	</li>
+							    </ul>
+							</li>
+							<li class="expandable">Languages
+							    <ul>
+							    	<li>Rails
+							    	</li>
+							    	<li>Ruby
+							    	</li>
+							    	<li>Perl
+							    	</li>
+							    	<li>PHP
+							    	</li>
+							    	<li>XML
+							    	</li>
+							    </ul>
+							</li>
+							<li class="expandable">Database
+							    <ul>
+							    	<li>MySQL
+							    	</li>
+							    </ul>
+							</li>
+							<li class="expandable">Web Servers
+							    <ul>
+							    	<li>Apache
+							    	</li>
+							    	<li>Tomcat
+							    	</li>
+							    </ul>
+							</li>
+							<li class="expandable">Source Code Management
+							    <ul>
+							    	<li>Git
+							    	</li>
+							    	<li>Subverison
+							    	</li>
+							    </ul>
+							</li>
+							<li class="expandable">Desktop Suites
+							    <ul>
+							    	<li>Adobe Photoshop
+							    	</li>
+							    	<li>Microsoft Word
+							    	</li>
+							    	<li>Microsoft Excel
+							    	</li>
+							    </ul>
+							</li>
+							<li class="expandable">Operating Systems
+								<ul>
+									<li>OS X
+									</li>
+									<li>Windows
+									</li>
+									<li>Red Hat Enterprise Linux
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="education">
+						<h2>
+							Education
+						</h2>
+						<div>
+							<p>
+								California State University, Chico
+							</p>
+							<p>
+								1999&mdash;2005
+							</p>
+							<p>
+								BS Instructional Technology; Minor Computer Science
+							</p>
+							<p>
+								3.576 GPA, Honors in General Education
+							</p>
+						</div>
+					</div>
+					<div id="awards">
+						<h2>
+							Awards
+						</h2>
+						<ul>
+							<li>Eagle Scout
+							</li>
+							<li>Phi Kappa Phi
+							</li>
+							<li>Phi Eta Sigma
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
