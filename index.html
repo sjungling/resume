@@ -41,7 +41,8 @@
       li {
         line-height: 1.5;
       }
-			
+			p {line-height:1.5;}
+			.right {text-align:right;}
 			/*=vcard
 			*****************************************************************************/
 			div#hd div.yui-u{
@@ -49,6 +50,7 @@
 			}
       .vcard div, .vcard p {
         margin: 0;
+        line-height:1.3;
       }
       h1.fn {
         margin: 0 0 .125em;
@@ -60,6 +62,7 @@
 			
 			/*=Experience
 			*****************************************************************************/
+			.job {margin-bottom: 2em;}
 			.project-links {margin:1.5em 0;}
 			.project-links h4 {font-size:108%;}
 			
@@ -113,7 +116,7 @@
         // 
 			};
 			function initExpandables(){
-			  $('.expandable').click(function(){
+			  $('.expandable a').click(function(){
           respondToClick(this);
 			  });
 				hideExpandables();
@@ -122,7 +125,7 @@
         $('.expandable ul').toggle();
 			};
 			function respondToClick(event){
-        $(event).children('ul').toggle();
+        $(event).siblings('ul').toggle();
 			}
 		</script>
 	</head>
@@ -151,72 +154,80 @@
 			</div>
 			<div id="bd">
 				<div id="yui-main">
-					<div class="yui-b">
-						<h2>
-							Objective
-						</h2>
-						<p>
-							Seeking an opportunity to continue to build upon my years of experience designing clean, simple, &amp; accessible web solutions.
-						</p>
-						<h2>
-							Experience
-						</h2>
-						<h3>
-							California State University, Chico
-						</h3>
-						<h4>
-							Information Technology Consultant
-						</h4>
-						<p>
-							January 2006&mdash;Present
-						</p>
-						<ul>
-							<li>Worked with clients to designed, developed, deployed, maintain, and support multiple Ruby on Rails applications for both internal and external audiences
-							</li>
-							<li>Extended open source solutions for automating the migration of student accounts to Google Apps.
-							</li>
-							<li>Maintain and support a mixed collection of Perl and PHP web applications.
-							</li>
-							<li>Piloted, supported, and promoted the use of enterprise wikis, issue tracking, source code management, and instant messaging to encourage collaboration between staff.
-							</li>
-							<li>Implemented and provided web analytics reports with Google Analytics to improve data-driven decisions.
-							</li>
-							<li>Worked with web team to devise a multi-year plan to ensure accessibility on campus web sites.
-							</li>
-							<li>Oversaw a collection of web application servers running under Apache &amp; Tomcat on Red Hat servers.
-							</li>
-							<li>Manage Google Search Appliance and custom web interface for search results.
-							</li>
-							<li>Perform webmaster duties including answering support questions, monitoring web traffic, cleaning up old content, and configuring Apache for new sites.
-							</li>
-						</ul>
-						<h3>
-							California State University, Chico
-						</h3>
-						<h4>
-							Web Developer
-						</h4>
-						<p>
-							October 2004&mdash;April 2005
-						</p>
-						<ul>
-							<li>Worked with designers to develop accessible &amp; standards compliant web portal interface
-							</li>
-							<li>Developed a solution for collating, analyzing, and reporting on web portal usage and performance.
-							</li>
-							<li>Designed, developed, and trained staff on using MovableType to manage and syndicate web content.
-							</li>
-							<li>Evaluated and worked with staff to implement a new web-based e-mail client.
-							</li>
-							<li>Re-designed the web interface of the single sign-on server to improve accessibility and usability.
-							</li>
-						</ul>
-					</div>
+          <div class="yui-b">
+            <h2>
+              Objective
+            </h2>
+            <p>
+              Seek an opportunity to continue to build upon my years of experience designing clean, simple, &amp; accessible web solutions.
+            </p>
+            <h2>
+              Experience
+            </h2>
+            <div class="job">
+              <h3>
+                Information Technology Consultant
+              </h3>
+              <div class="yui-g">
+                <div class="yui-u first">
+                  <h4>California State University, Chico</h4>
+                </div>
+                <div class="yui-u right">
+                  <p> January 2006&mdash;Present</p>
+                </div>
+              </div>
+              <ul>
+                <li>Worked with clients to designed, developed, deployed, maintain, and support multiple Ruby on Rails applications for both internal and external audiences
+                </li>
+                <li>Extended open source solutions for automating the migration of student accounts to Google Apps.
+                </li>
+                <li>Maintain and support a mixed collection of Perl and PHP web applications.
+                </li>
+                <li>Piloted, supported, and promoted the use of enterprise wikis, issue tracking, source code management, and instant messaging to encourage collaboration between staff.
+                </li>
+                <li>Implemented and provided web analytics reports with Google Analytics to improve data-driven decisions.
+                </li>
+                <li>Worked with web team to devise a multi-year plan to ensure accessibility on campus web sites.
+                </li>
+                <li>Oversaw a collection of web application servers running under Apache &amp; Tomcat on Red Hat servers.
+                </li>
+                <li>Manage Google Search Appliance and custom web interface for search results.
+                </li>
+                <li>Perform webmaster duties including answering support questions, monitoring web traffic, cleaning up old content, and configuring Apache for new sites.
+                </li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3>
+                Web Developer
+              </h3>
+              <div class="yui-g">
+                <div class="yui-u first">
+                  <h4>California State University, Chico</h4>
+                </div>
+                <div class="yui-u right">
+                  <p>October 2004&mdash;April 2005</p>
+                </div>
+              </div>
+              <ul>
+                <li>Worked with designers to develop accessible &amp; standards compliant web portal interface
+                </li>
+                <li>Developed a solution for collating, analyzing, and reporting on web portal usage and performance.
+                </li>
+                <li>Designed, developed, and trained staff on using MovableType to manage and syndicate web content.
+                </li>
+                <li>Evaluated and worked with staff to implement a new web-based e-mail client.
+                </li>
+                <li>Re-designed the web interface of the single sign-on server to improve accessibility and usability.
+                </li>
+              </ul>
+            </div>
+          </div>
 				</div>
 				<div class="yui-b">
 				  <div id="projects">
 					  <h2>
-						  Projects
+						  Recent Projects
 						</h2>
             <ul>
               <li class="project-thumb" id="project-events">
@@ -257,7 +268,7 @@
 							Skills
 						</h2>
 						<ul>
-							<li class="expandable">Web
+							<li class="expandable"><a href="#">Web</a>
 							    <ul>
 							    	<li>HTML
 							    	</li>
@@ -267,7 +278,7 @@
 							    	</li>
 							    </ul>
 							</li>
-							<li class="expandable">Languages
+							<li class="expandable"><a href="#">Languages</a>
 							    <ul>
 							    	<li>Rails
 							    	</li>
@@ -281,13 +292,13 @@
 							    	</li>
 							    </ul>
 							</li>
-							<li class="expandable">Database
+							<li class="expandable"><a href="#">Database</a>
 							    <ul>
 							    	<li>MySQL
 							    	</li>
 							    </ul>
 							</li>
-							<li class="expandable">Web Servers
+							<li class="expandable"><a href="#">Web Servers</a>
 							    <ul>
 							    	<li>Apache
 							    	</li>
@@ -295,7 +306,7 @@
 							    	</li>
 							    </ul>
 							</li>
-							<li class="expandable">Source Code Management
+							<li class="expandable"><a href="#">Source Code Management</a>
 							    <ul>
 							    	<li>Git
 							    	</li>
@@ -303,7 +314,7 @@
 							    	</li>
 							    </ul>
 							</li>
-							<li class="expandable">Desktop Suites
+							<li class="expandable"><a href="#">Desktop Software</a>
 							    <ul>
 							    	<li>Adobe Photoshop
 							    	</li>
@@ -313,7 +324,7 @@
 							    	</li>
 							    </ul>
 							</li>
-							<li class="expandable">Operating Systems
+							<li class="expandable"><a href="#">Operating Systems</a>
 								<ul>
 									<li>OS X
 									</li>
@@ -331,13 +342,13 @@
 						</h2>
 						<div>
 							<p>
-								California State University, Chico
+								<strong>Bachelor of Science in Instructional Technology</strong>
+							</p>
+							<p>
+								California State University, Chico 
 							</p>
 							<p>
 								1999&mdash;2005
-							</p>
-							<p>
-								BS Instructional Technology; Minor Computer Science
 							</p>
 							<p>
 								3.576 GPA, Honors in General Education
@@ -346,7 +357,7 @@
 					</div>
 					<div id="awards">
 						<h2>
-							Awards
+							Awards &amp; Affiliations
 						</h2>
 						<ul>
 							<li>Eagle Scout
