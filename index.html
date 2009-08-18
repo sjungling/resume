@@ -1,7 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
 		<title>
 			Scott Jungling - Resume
 		</title>
@@ -71,16 +68,6 @@
       div#education p {
         margin-bottom: 0;
       }
-      li.expandable {
-        border-bottom :1px dotted #ccc;
-      }
-      li.expandable:hover {
-        cursor: pointer;
-      }
-      li.expandable:hover ul {
-        cursor: default;
-      }
-
 			/*=Projects
 			*****************************************************************************/
       .project-thumb {
@@ -107,29 +94,9 @@
 		</style>
 		<script src="http://www.google.com/jsapi"></script>
 		<script type="text/javascript" charset="utf-8">
-			google.load("jquery","1")
-			google.setOnLoadCallback(function(){
-        initExpandables();
-        initProjectThumbnails();
-			});
-			function initProjectThumbnails(){
-        // 
-			};
-			function initExpandables(){
-			  $('.expandable a').click(function(){
-          respondToClick(this);
-			  });
-				hideExpandables();
-			};
-			function hideExpandables(){
-        $('.expandable ul').toggle();
-			};
-			function respondToClick(event){
-        $(event).siblings('ul').toggle();
-			}
+      // 
 		</script>
-	</head>
-	<body>
+	</head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; ">
 		<div id="doc4" class="yui-t6">
 			<div id="hd" class="vcard">
   				<h1 class="fn">
@@ -145,7 +112,7 @@
   				</div>
   				<div>
   					<p class="email">
-  						<a href="mailto:&#x73;&#x63;&#x6F;&#x74;&#x74;&#x2E;&#x6A;&#x75;&#x6E;&#x67;&#x6C;&#x69;&#x6E;&#x67;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">scott.jungling@gmail.com</a>
+  						<a href="mailto:scott.jungling@gmail.com">scott.jungling@gmail.com</a>
   					</p>
   					<p class="tel">
   						530.924.4280
@@ -222,6 +189,39 @@
                 </li>
               </ul>
             </div>
+  					<div id="education">
+  						<h2>
+  							Education
+  						</h2>
+  						<div>
+  							<p>
+  								<strong>Bachelor of Science in Instructional Technology</strong>
+  							</p>
+  							<p>
+  								California State University, Chico 
+  							</p>
+  							<p>
+  								1999&mdash;2005
+  							</p>
+  							<p>
+  								3.576 GPA, Honors in General Education
+  							</p>
+  						</div>
+  					</div>
+  					<div id="awards">
+  						<h2>
+  							Awards &amp; Affiliations
+  						</h2>
+  						<ul>
+  							<li>Eagle Scout
+  							</li>
+  							<li>Phi Kappa Phi
+  							</li>
+  							<li>Phi Eta Sigma
+  							</li>
+  						</ul>
+  					</div>
+
           </div>
 				</div>
 				<div class="yui-b">
@@ -257,74 +257,70 @@
               <li class="project-thumb" id="project-mobile">
                 <a href="http://mobile.csuchico.edu">
                   <img src="./images/mobile-square.png" alt="Chico State Mobile"> 
-                  Chico State Mobile
-                </a>
-              </li>
-            </ul>
+                  Chico State Mobile</a></li></ul>
 					</div>
-					
 					<div id="skills">
 						<h2>
 							Skills
 						</h2>
 						<ul>
-							<li class="expandable"><a href="#">Web</a>
-							    <ul>
-							    	<li>HTML
-							    	</li>
-							    	<li>CSS
-							    	</li>
-							    	<li>Javascript
-							    	</li>
-							    </ul>
-							</li>
-							<li class="expandable"><a href="#">Languages</a>
-							    <ul>
-							    	<li>Rails
-							    	</li>
-							    	<li>Ruby
-							    	</li>
-							    	<li>Perl
-							    	</li>
-							    	<li>PHP
-							    	</li>
-							    	<li>XML
-							    	</li>
-							    </ul>
-							</li>
-							<li class="expandable"><a href="#">Database</a>
-							    <ul>
-							    	<li>MySQL
-							    	</li>
-							    </ul>
-							</li>
-							<li class="expandable"><a href="#">Web Servers</a>
-							    <ul>
-							    	<li>Apache
-							    	</li>
-							    	<li>Tomcat
-							    	</li>
-							    </ul>
-							</li>
-							<li class="expandable"><a href="#">Source Code Management</a>
-							    <ul>
-							    	<li>Git
-							    	</li>
-							    	<li>Subverison
-							    	</li>
-							    </ul>
-							</li>
-							<li class="expandable"><a href="#">Desktop Software</a>
-							    <ul>
+							<li class="expandable">Web
+							    <ul>               
+							    	<li>HTML         
+							    	</li>            
+							    	<li>CSS          
+							    	</li>            
+							    	<li>Javascript   
+							    	</li>            
+							    </ul>              
+							</li>                  
+							<li class="expandable">Languages
+							    <ul>               
+							    	<li>Rails        
+							    	</li>            
+							    	<li>Ruby         
+							    	</li>            
+							    	<li>Perl         
+							    	</li>            
+							    	<li>PHP          
+							    	</li>            
+							    	<li>XML          
+							    	</li>            
+							    </ul>              
+							</li>                  
+							<li class="expandable">Database
+							    <ul>               
+							    	<li>MySQL        
+							    	</li>            
+							    </ul>              
+							</li>                  
+							<li class="expandable">Web Servers
+							    <ul>               
+							    	<li>Apache       
+							    	</li>            
+							    	<li>Tomcat       
+							    	</li>            
+							    </ul>              
+							</li>                  
+							<li class="expandable">Source Code Management
+							    <ul>               
+							    	<li>Git          
+							    	</li>            
+							    	<li>Subverison   
+							    	</li>            
+							    </ul>              
+							</li>                  
+							<li class="expandable">Desktop Software
+							    <ul>               
 							    	<li>Adobe Photoshop
-							    	</li>
+							    	</li>            
 							    	<li>Microsoft Word
-							    	</li>
+							    	</li>            
 							    	<li>Microsoft Excel
-							    	</li>
-							    </ul>
-							</li>
-							<li class="expandable"><a href="#">Operating Systems</a>
+							    	</li>            
+							    </ul>              
+							</li>                  
+							<li class="expandable">Operating Systems
 								<ul>
 									<li>OS X
 									</li>
@@ -336,41 +332,16 @@
 							</li>
 						</ul>
 					</div>
-					<div id="education">
-						<h2>
-							Education
-						</h2>
-						<div>
-							<p>
-								<strong>Bachelor of Science in Instructional Technology</strong>
-							</p>
-							<p>
-								California State University, Chico 
-							</p>
-							<p>
-								1999&mdash;2005
-							</p>
-							<p>
-								3.576 GPA, Honors in General Education
-							</p>
-						</div>
-					</div>
-					<div id="awards">
-						<h2>
-							Awards &amp; Affiliations
-						</h2>
-						<ul>
-							<li>Eagle Scout
-							</li>
-							<li>Phi Kappa Phi
-							</li>
-							<li>Phi Eta Sigma
-							</li>
-						</ul>
-					</div>
-					
 				</div>
 			</div>
 		</div>
-	</body>
+	
+<!--
+  TODO Emphasize leadership/driver roles on projects (Web Developer)
+  TODO emphasize collaboration/communication/non-technical skills; demonstrate your application of business/organizational intelligence to the technical problems, combined with tech skills ... 
+  TODO add numbers & timelines where possible
+  TODO Rands-ify objective (think swiss design, photography, travel)
+
+-->
+</body>
 </html>
