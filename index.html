@@ -80,7 +80,9 @@
 		.project-links h4 {
 			font-size: 108%;
 		}
-		.job ul li blockquote {display:none;}
+		.job .more-info {
+		  display:none;
+		}
 
 		/*=Education
 		*****************************************************************************/
@@ -117,13 +119,13 @@
 		google.load('jquery','1');
 		google.setOnLoadCallback(function() {
 			$(document).ready(function() {
-				$('.moreExperience').click(function(){
-					var bq = $(this).next('blockquote');
-					if ($(bq).toggle()) {
-						if ($(bq).is(':visible')) {
-							$(this).text("Hide more info");
+				$('.job .more').click(function(){
+					var more = $(this).next('div');
+					if ($(more).toggle()) {
+						if ($(more).is(':visible')) {
+							$(this).html("&laquo;");
 						} else {
-							$(this).text("Read more");
+							$(this).html("&raquo;");
 						};
 					};
 					return false;
@@ -163,9 +165,9 @@
 							<h2>
 								Objective
 							</h2>
-							<p>
-								 To obtain a position where I can utilize my Swiss inspired design sensibilities and web standards skills to create unobtrusive, clear, and effective solutions.
-							</p>
+              <p>
+                I work best in environments where I can apply my Swiss inspired design sensibilities and web standards to create solutions that allow people to easily accomplish their goals. I appreciate creating solutions where form follows function and subtle aesthetics give precedent to content.
+              </p>
 						</div><!--#objective-->
 						<div id="work-history">
 							<h2>
@@ -188,23 +190,41 @@
 									</div>
 								</div>
 								<ul>
-									<li>Worked with clients to design, develop, deploy, maintain, and support multiple Ruby on Rails applications for both internal and external audiences. <a href="#" class="moreExperience">Read more</a><blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+									<li>
+									  Worked with clients to design, develop, deploy, maintain, and support multiple Ruby on Rails applications for both internal and external audiences. <a href="#" title="More information" class="more">&raquo;</a>
+									  <div class="more-info">
+									    Worked independently with on-campus clients to &hellips; 
+									  </div>
 									</li>
-									<li>Extended open source solutions for automating the migration of student accounts to Google Apps.
+									<li>
+									  Extended open source solutions to automate the migration of 45,0000 student accounts to Google Apps. <a href="#" title="More information" class="more">&raquo;</a>
+									  <div class="more-info">
+									   Added methods to gdatav2rubyclientlib to create accounts and set e-mail forwarding to accommodate the 50% of users who had forwarding set on the legacy system. This facilitated the account creation process in less than 4 hours thus minimizing the disruption of e-mail service.
+									  </div>
 									</li>
-									<li>Maintain and support a mixed collection of Perl and PHP web applications.
+									<li>
+									  Maintain and support a collection of Perl and PHP web applications. <a href="#" title="More information" class="more">&raquo;</a>
+									  <div class="more-info">
+									    foo!
+								    </div>
 									</li>
-									<li>Piloted, supported, and promoted the use of enterprise wikis, issue tracking, source code management, and instant messaging to encourage collaboration between staff.
+									<li>
+									  Piloted, supported, and promoted the use of enterprise wikis, issue tracking, source code management, and instant messaging to encourage collaboration between staff.
 									</li>
-									<li>Implemented and provided web analytics reports with Google Analytics to improve data-driven decisions.
+									<li>
+									  Implemented and provided web analytics reports with Google Analytics to improve data-driven decisions.
 									</li>
-									<li>Worked with web team to devise a multi-year plan to ensure accessibility on campus web sites.
+									<li>
+									  Worked with web team to devise a multi-year plan to ensure accessibility on campus web sites.
 									</li>
-									<li>Oversaw a collection of web application servers running under Apache &amp; Tomcat on Red Hat servers.
+									<li>
+									  Oversaw a collection of web application servers running under Apache &amp; Tomcat on Red Hat servers.
 									</li>
-									<li>Manage Google Search Appliance and custom web interface for search results.
+									<li>
+									  Manage Google Search Appliance and custom web interface for search results.
 									</li>
-									<li>Perform webmaster duties including answering support questions, monitoring web traffic, cleaning up old content, and configuring Apache for new sites.
+									<li>
+									  Perform webmaster duties including answering support questions, monitoring web traffic, cleaning up old content, and configuring Apache for new sites.
 									</li>
 								</ul>
 							</div>
