@@ -5,36 +5,44 @@
 		<title>
 			Scott Jungling - Resume
 		</title>
-		<script type="text/javascript" src="http://use.typekit.com/hnq4oga.js"></script>
+		<!-- <script type="text/javascript" src="http://use.typekit.com/hnq4oga.js"></script> -->
 		<script type="text/javascript">
 //<![CDATA[
-		try{Typekit.load();}catch(e){}
+		// try{Typekit.load();}catch(e){}
 		//]]>
 		</script>
 		<style type="text/css" media="screen">
 		/*<![CDATA[*/
-		@import url("http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css");
-		@import url("http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/base/base-min.css");
+				@import url("http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css");
+				@import url("http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/base/base-min.css");
 
 		/*=Global
 		*****************************************************************************/
 		body {
+			background: #fff url('gridbg.png');
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		h1,h2,h3,p,li {
+/*			margin: 0;*/
 		}
 		#yui-main .yui-b {
 			padding-right: 1.5em;
 		}
 		h2 {
 			border-bottom: 1px solid #ccc;
-			font-size: 182%;
+			font-size: 182%; /* 24px */
+			/* line-height: 1.0556em; /* 19px */*/
+			margin-top: 1.0556em;
+			margin-bottom: 0em;
 			letter-spacing: -.01em;
-			margin-bottom: .125em;
 			padding-left: .125em;
 		}
 
 		h3 {
-			font-size: 138.5%;
-			margin: .5em 0 .25em;
+			font-size: 138.5%; /* 18px */
+			line-height: 1.0556em; /* 19px */
+			margin-top: 1.0556em;
+			margin-bottom: 0em;
 		}
 
 		ul,li {
@@ -44,51 +52,50 @@
 		ul ul {
 			margin-left: 2em;
 		}
-		li {
-			line-height: 1.5;
-		}
-		p {
-			line-height: 1.5;
+		p, li {
+			line-height: 1.4615em;
 		}
 		.right {
 			text-align: right;
 		}
+		.job {
+			margin-bottom: 1.4615em;
+		}
+		h3 + div {
+			margin-top: .73em;
+			margin-bottom: .73em;
+		}
+
 		/*=vcard
 		*****************************************************************************/
-		div#hd div.yui-u {
-			vertical-align: bottom;
-		}
-		.vcard div, .vcard p {
-			margin: 0;
-			line-height: 1.3;
-		}
-		h1.fn {
-			margin: 0 0 .125em;
-		}
 		h1.fn .givenname, h1.fn .surname {
-			line-height: .9;
-			font-size: 197%;
+			font-size: 197%; /* 26px */
+			line-height: 1.4615em; /* 38px */
+			margin-top: 0.7308em;
+			margin-bottom: 0em;
+		}
+
+		.vcard p {
+			font-size: 0.7692em; /* 10px */
+			line-height: .95em; /* 19px */
+			margin-top: .95em!important;
+			margin-bottom: 0em;
+			margin-left: .5em;
 		}
 		/*=Experience
 		*****************************************************************************/
-		.job {
-			margin-bottom: 2em;
-		}
 		.project-links {
-			margin: 1.5em 0;
+		/* margin: 1.5em 0;*/
 		}
 		.project-links h4 {
-			font-size: 108%;
-		}
-		.job .more-info {
-		  display:none;
+			font-size: 108%; /* 14px */
+			line-height: 1.3571em; /* 19px */
+			margin-top: 1.3571em;
+			margin-bottom: 0em;
 		}
 
 		/*=Education
 		*****************************************************************************/
-		div#education p {
-			margin-bottom: 0;
-		}
 		/*=Projects
 		*****************************************************************************/
 		.project-thumb {
@@ -109,7 +116,10 @@
 			display: block;
 		}
 		.project-thumb a {
-			font-size: 77%;
+			font-size: 77%; /* 10px */
+			line-height: 1.9em; /* 19px */
+			margin-top: 1.9em;
+			margin-bottom: 0em;
 		}
 		/*]]>*/
 		</style>
@@ -136,26 +146,30 @@
 		</script>
 	</head>
 	<body>
-		<div id="doc4" class="yui-t6">
-			<div id="hd" class="vcard">
-				<h1 class="fn">
-					<span class="givenname">Scott</span> <span class="surname">Jungling</span>
-				</h1>
-				<div class="adr">
-					<p class="street-address">
-						492 Panama Ave.
-					</p>
-					<p>
-						<span class="locality">Chico</span>, <span class="region">CA</span>, <span class="postal-code">95973</span>
-					</p>
+		<div id="doc2" class="yui-t6">
+			<div id="hd" class="vcard yui-gd">
+				<div class="yui-u first">
+					<h1 class="fn">
+						<span class="givenname">Scott</span> <span class="surname">Jungling</span>
+					</h1>
 				</div>
-				<div>
-					<p class="email">
-						<a href="mailto:scott.jungling@gmail.com">scott.jungling@gmail.com</a>
-					</p>
-					<p class="tel">
-						530.924.4280
-					</p>
+				<div class="yui-u">
+					<div class="adr">
+						<p class="street-address">
+							492 Panama Ave.
+						</p>
+						<p>
+							<span class="locality">Chico</span>, <span class="region">CA</span>, <span class="postal-code">95973</span>
+						</p>
+					</div>
+					<div>
+						<p class="email">
+							<a href="mailto:scott.jungling@gmail.com">scott.jungling@gmail.com</a>
+						</p>
+						<p class="tel">
+							530.924.4280
+						</p>
+					</div>
 				</div>
 			</div>
 			<div id="bd">
