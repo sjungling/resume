@@ -1,0 +1,105 @@
+@import url("http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css");
+
+/*=Global
+*****************************************************************************/
+body {
+	background: #fff url('images/gridbg.png');
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
+#yui-main .yui-b {
+	padding-right: 1.5em;
+}
+h2 {
+	border-bottom: 1px solid #ccc;
+	font-size: 182%; /* 24px */
+	/* line-height: 1.0556em; /* 19px */*/
+	margin-top: 1.0556em;
+	margin-bottom: 0em;
+	letter-spacing: -.01em;
+	padding-left: .125em;
+}
+
+h3 {
+	font-size: 138.5%; /* 18px */
+	line-height: 1.0556em; /* 19px */
+	margin-top: 1.0556em;
+	margin-bottom: 0em;
+}
+
+ul,li {
+	margin: 0;
+	padding: 0;
+}
+ul ul {
+	margin-left: 2em;
+}
+p, li {
+	line-height: 1.4615em;
+}
+.right {
+	text-align: right;
+}
+.job {
+	margin-bottom: 1.4615em;
+}
+h3 + div {
+	margin-top: .73em;
+	margin-bottom: .73em;
+}
+
+/*=vcard
+*****************************************************************************/
+h1 {
+	font-size: 197%; /* 26px */
+	line-height: 1.4615em; /* 38px */
+	margin-top: 0.7308em;
+	margin-bottom: 0em;
+}
+
+.vcard p {
+	font-size: 0.7692em; /* 10px */
+	line-height: .95em; /* 19px */
+	margin-top: .95em!important;
+	margin-bottom: 0em;
+	margin-left: .5em;
+}
+/*=Experience
+*****************************************************************************/
+
+.project-links h4 {
+	font-size: 108%; /* 14px */
+	line-height: 1.3571em; /* 19px */
+	margin-top: 1.3571em;
+	margin-bottom: 0em;
+}
+
+/*=Education
+*****************************************************************************/
+/*=Projects
+*****************************************************************************/
+.project-thumb {
+	display: inline-block;
+	text-align: center;
+}
+
+.project-thumb:hover {
+	background: #efefef;
+}
+.project-thumb img {
+	width: 72px;
+	height: 72px;
+	border: 1px solid #ccc;
+	margin: .5em .5em 0 .5em;
+	vertical-align: bottom;
+	background-repeat: no-repeat;
+	display: block;
+}
+.project-thumb a {
+	font-size: 77%; /* 10px */
+	line-height: 1.9em; /* 19px */
+	margin-top: 1.9em;
+	margin-bottom: 0em;
+}
