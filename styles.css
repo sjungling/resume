@@ -3,7 +3,7 @@
 /*=Global
 *****************************************************************************/
 html {
-	background: #fff url('images/gridbg.png');
+/*	background: #fff url('images/gridbg.png');*/
 }
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -60,8 +60,8 @@ h3 + div {
 h1 {
 	font-size: 264%; /* 26px */
 	line-height: 1.4615em; /* 38px */
-	margin-bottom: 0.7308em;
-/*	margin-bottom: 0em;*/
+/*	margin-bottom: 0.7308em;*/
+	margin-bottom: .28em;
 }
 
 .vcard p {
@@ -110,16 +110,41 @@ h1 {
 /*=Debugging
 *****************************************************************************/
 #skills .skill-set .yui-u {
-/*	background:yellow;*/
+/* background:yellow;*/
 }
 
-#skills .skill-set {margin-top:1.4616em;}
-#skills .skill-set h3 {
-	margin:0;
-	margin-right: .5em;
-	line-height:1;
-/*	text-align:right;*/
+#skills .skill-set {
+	margin-top: 1.4616em;
 }
-div.adr{
-	margin-top:2em;
+#skills .skill-set h3 {
+	margin: 0;
+	margin-right: .5em;
+	line-height: 1;
+}
+#skills .skill-set li {
+	list-style-type: none;
+}
+div.vcard {
+	margin-bottom: 1em;
+	line-height: 1.5em;
+}
+#skills {
+	margin-top: 1em;
+}
+
+#education {
+	margin-top: 2.5em;
+}
+#awards {
+	margin-top: 1.55em;
+}
+
+#work-history {
+	margin-top:1.55em;
+}
+
+#work-history h2 {
+	margin-top: 1.0556em;
+/*	margin-bottom: 0.9556em;*/
+	line-height: 1em;
 }
