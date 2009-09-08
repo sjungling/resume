@@ -148,3 +148,6 @@ div.vcard {
 /*	margin-bottom: 0.9556em;*/
 	line-height: 1em;
 }
+.date {
+	font-style: italic;
+}
