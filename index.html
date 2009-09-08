@@ -5,9 +5,20 @@
 		<title>
 			Scott Jungling - Resume
 		</title>
-		<style type="text/css" media="screen" >
-		  @import url("styles.css");
+		<style type="text/css" media="all" >
+      @import url("styles.css");
 		</style>
+    <style type="text/css">
+      @media print {
+        #doc2{font-family:"Times New Roman",Times,serif;font-size:11px;width:57.69em;}
+        .yui-t6 #sidebar{width:20.0769em!important;}
+        h1,h2,h3,h4,h5,h6{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+        #projects{display:none;}
+        #education{margin-top:0;}
+        a{color:#000;background:transparent;font-weight:bold;text-decoration:underline;font-size:108%;}
+        div.job{page-break-before:auto!important;}
+      }
+    </style>
 	</head>
 	<body>
 		<div id="doc2" class="yui-t6">
@@ -175,7 +186,7 @@
 						</div><!--#work-history-->
 					</div><!--#yui-main .yui-b-->
 				</div><!--#yui-main-->
-				<div class="yui-b">
+				<div id="sidebar" class="yui-b">
 					<div id="projects">
 						<h2>
 							Recent Projects
