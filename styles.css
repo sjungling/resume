@@ -2,9 +2,6 @@
 
 /*=Global
 *****************************************************************************/
-html {
-/*	background: #fff url('images/gridbg.png');*/
-}
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -15,13 +12,15 @@ h1,h2,h3,h4,h5,h6 {
 	padding-right: 1.5em;
 }
 h2 {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #CCC;
 	font-size: 182%; /* 24px */
-	/* line-height: 1.0556em; /* 19px */*/
-	margin-top: 1.0556em;
 	margin-bottom: 0em;
 	letter-spacing: -.01em;
-/*	padding-left: .125em;*/
+	color: #476695;
+	/*
+		TODO refine shadow
+	*/
+/*	text-shadow: #999 0.5px 0.5px 2px;*/
 }
 
 h3 {
@@ -29,10 +28,11 @@ h3 {
 	line-height: 1.0556em; /* 19px */
 	margin-top: 1.0556em;
 	margin-bottom: 0em;
+	color: #333;
 }
 
 li	{
-	list-style: disc;
+	list-style: square;
 }
 ul,li {
 	margin: 0;
@@ -43,6 +43,7 @@ ul ul {
 }
 p, li {
 	line-height: 1.4615em;
+	color: #454545;
 }
 .right {
 	text-align: right;
@@ -109,17 +110,14 @@ h1 {
 
 /*=Debugging
 *****************************************************************************/
-#skills .skill-set .yui-u {
-/* background:yellow;*/
-}
 
 #skills .skill-set {
 	margin-top: 1.4616em;
 }
 #skills .skill-set h3 {
-	margin: 0;
-	margin-right: .5em;
-	line-height: 1;
+	margin: -.2em .5em 0 0;
+	line-height: 1.25;
+	font-size: 123.1%;
 }
 #skills .skill-set li {
 	list-style-type: none;
@@ -140,14 +138,33 @@ div.vcard {
 }
 
 #work-history {
-	margin-top:1.55em;
+
 }
 
 #work-history h2 {
-	margin-top: 1.0556em;
-/*	margin-bottom: 0.9556em;*/
-	line-height: 1em;
+
 }
 .date {
 	font-style: italic;
+}
+
+.job li+li {
+	margin-top: .75em;
+}
+
+.company-by-line, .company-by-line p {
+	color: #666;
+}
+
+#objective {
+	display: none;
+}
+.chevron {
+	font-family: Arial;
+	font-size: 123.5%;
+	color: #ccc;
+}
+
+div.job + div.job {
+	border-top: 1px solid #E6E6E6;
 }
