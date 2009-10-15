@@ -17,23 +17,27 @@
         #education{margin-top:0;}
         a{color:#000;background:transparent;font-weight:bold;text-decoration:underline;font-size:108%;}
         div.job{page-break-before:auto!important;}
+        div.job li+li {margin:0;}
       }
     </style>
 	</head>
 	<body>
 		<div id="doc2" class="yui-t6">
-			<div id="hd" class="vcard">
+			<div id="hd" class="yui-gc vcard">
+			  <div class="yui-u first">
 					<h1 class="fn">
 						<span class="givenname">Scott</span> <span class="surname">Jungling</span>
 					</h1>
-					<div class="adr">
-						<span class="street-address">
-							492 Panama Ave.
-						</span>
-            <!-- <p> -->
-							<span class="locality">Chico</span>, <span class="region">CA</span>, <span class="postal-code">95973</span>
-            <!-- </p> -->
-					</div>
+			  </div>
+			  <div class="yui-u">
+          <div class="adr">
+            <div class="street-address">
+              492 Panama Ave
+            </div>
+            <div>
+              <span class="locality">Chico</span>, <span class="region">CA</span>, <span class="postal-code">95973</span>
+            </div>
+          </div>
 					<div class="contact">
 						<div class="email">
 							<a href="mailto:scott.jungling@gmail.com">scott.jungling@gmail.com</a>
@@ -42,17 +46,17 @@
 							530.924.4280
 						</div>
 					</div>
+			  </div>
 			</div>
 			<div id="bd">
 				<div id="yui-main">
 					<div class="yui-b">
 						<div id="objective">
 							<h2>
-								Personal Statement
+								Objective
 							</h2>
               <p>
-                I work best in environments where I can apply my minimalism design taste and web standards to create solutions that allow people to easily accomplish tasks. I enjoy creating solutions where form follows function and subtle aesthetics give precedent to content.
-              </p>
+I am a &ldquo;less is more&rdquo; web developer looking for an opportunity as webmaster where I can continue to develop my skills and shape how people access information. I believe that <em>form follows function</em> and that some of the best design systems are the least obtrusive.</p>
 						</div><!--#objective-->
 						<div id="work-history">
 							<h2>
@@ -75,19 +79,11 @@
 									</div>
 								</div>
                 <ul>
-									<li>Collaborated with clients to design, develop, deploy, maintain, and support  9 Ruby on Rails applications ranging from intranet tools for user support to public events calendar. </li>
-									<li>Extended open source solutions to successfully automate the migration of 45,000 student accounts to Google Apps within a 24 hour span.
+									<li>Migrated the campus search engine to a Google Search Appliance in order to provide more relevant results and faster indexing. Worked with departments to optimize their web sites and content to improve their findability. Conducted periodic evaluations of top queries to ensure the proper information was being served. </li>
+									<li>Proactively sought to improve the user experience for three of the higher traffic sites including the staff directory, branded search page, and campus map. Migrated campus search engine to a Google Search Appliance in order to provide more relevant results and faster indexing. 
 									</li>
-									<li>Led pilot project designed to test the feasibility of implementing an enterprise wiki solution for campus. Demonstrated to and trained 40 groups on how to organize and manage their wiki content. Implemented a self-support model that allowed over 600 users to adopt the wiki within a year of go-live without any significant support costs to the organization.</li>
-									<li>Implemented Google Analytics to provide automated web reports for over 30 departments. Reports were used to assist in making data-driven decisions for the latest campus-wide redesign project. </li>
-									<li>Maintained three of the highest traffic campus sites: directory, search results page, and campus map. Migrated campus search engine to Google Search Appliance for more accurate results. Overhauled legacy campus directory to replace flat file input with XML feed to improve parsing.</li>
-									<li>Engaged with cross-departmental web team to write a multi-year plan with a goal of guaranteeing web accessibility across 400 sites and over 50,000 web pages.
-									</li>
-									<li>Supported a cluster of servers running Apache and Tomcat on Red Hat Linux that provided enterprise services.
-									</li>
-									<li>Managed a shared web hosting environment comprised of development and production virtual machines for four organizations. Partitioned the deployment of Tomcat applications to avoid resource conflicts. Coordinated downtime with system administrators to minimize end-user impact.</li>
-									<li>Performed webmaster duties including answering support calls and e-mail, monitoring web traffic, proactively cleaning up out-of-date content, and managing a shared hosting environment with Apache.</li>
-									<li>Promoted the adoption of issue tracking, source code management, and instant messaging to facilitate improved collaboration and communication between developers within Central IT.</li>
+									<li>Collaborated with web designers and developers to author a five-year plan to ensure web accessibility for the 400 sites within the campus. The plan involved establishing a baseline accessibility score and then through continual scanning and reporting. High priority sites were remediated by importing them into a centralized content management system with standardized templates.</li>
+									<li>Led a project to implement an enterprise wiki service. The wiki increased staff collaboration and communication between departments on projects and documentation. Trained 25 groups on how to organize and manage their wiki content. Implemented a self-support model that allowed over 600 users to adopt the wiki within a year of launching  without any significant support costs to the organization.</li>
                 </ul>
 							</div>
 							<div class="job">
@@ -107,34 +103,12 @@
 									</div>
 								</div>
                 <ul>
-									<li>Worked with designers to translate design proofs for the campus portal. Overhauled XLS templates to generate clean, accessible, and web standards compliant markup.</li>
-									<li>Developed web application to visualize aggregate server metrics for performance analysis.</li>
-									<li>Launched publishing framework with MovableType that streamlined the distribution of daily and weekly announcements from Public Affairs.</li>
-									<li>Researched and evaluated upgrade options for a web-based e-mail client solution aimed at the student population. Integrated campus single sign-on into the Horde/IMP.</li>
-									<li>Revamped the design of the single sign-on user interface to improve the usability and accessibility by removing extraneous design elements.</li>
+									<li>Worked with designers to turn Photoshop design compositions into XHTML and CSS for the campus portal. Overhauled XLS templates to generate clean, accessible, and web standards compliant markup to meet accessibility requirements. </li>
+									<li>Simplified the design of the single sign-on application to provide users with a clean, usable, and accessible interface. Improved accessibility by converting the markup from tables to semantic markup.</li>
+									<li>Streamlined the workflow required for the distribution of daily and weekly announcements from Public Affairs department with MovableType and <code>rsync</code> to syndicate content.</li>
+									<li>Researched and evaluated options for upgrade web-based e-mail for the student population. Integrated the campus single sign-on service into the Horde/IMP e-mail installation.</li>
                 </ul>
 							</div>
-              <div class="job">
-                <h3>
-                  Web Designer <span class="chevron">&raquo;</span>
-                </h3>
-                <div class="yui-g company-by-line">
-                  <div class="yui-u first">
-                    <h4>
-                      The ChicoProject
-                    </h4>
-                  </div>
-                  <div class="yui-u right">
-                    <p>
-                      <span class="date">October 2004</span>&mdash;<span class="date">December 2005</span>
-                    </p>
-                  </div>
-                </div>
-                <ul>
-								<li>Worked with graphic designers to construct web standards-based templates for five client sites from Photoshop and Illustrator designs. Standards-based templates provided the means for rapid prototyping and development while ensuring visual consistency.</li>
-								<li>Performed liaison duties between designer and developers to integrate templates with .NET web applications.</li>
-                </ul>
-              </div>
               <div class="job">
                 <h3>
                   Help Desk Support <span class="chevron">&raquo;</span>
@@ -152,34 +126,9 @@
                   </div>
                 </div>
                 <ul>
-									<li>Provided technical support to a 15,000 person user base over the phone and in person.</li>
-									<li>Taught students, faculty, and staff on the basic usage of Photoshop, Dreamweaver, and UNIX.</li>
-									<li>Provided Tier 2 phone support for various campus networks including dial-up, DSL, wireless, residential network, and distance education.</li>
-									<li>Launched an intranet blog to consolidate communications between student and professional support staff.</li>
-                </ul>
-              </div>
-              <div class="job">
-                <h3>
-                  Online Editor / Technical Advisor <span class="chevron">&raquo;</span>
-                </h3>
-                <div class="yui-g company-by-line">
-                  <div class="yui-u first">
-                    <h4>
-                      Chico Enterprise-Record
-                    </h4>
-                  </div>
-                  <div class="yui-u right">
-                    <p>
-                      <span class="date">June 2000</span>&mdash;<span class="date">August 2003</span>
-                    </p>
-                  </div>
-                </div>
-                <ul>
-									<li>Led redesign project to rebuild the paper's web presence. Designed an online specific masthead to support the new visual layout and information architecture.</li>
-									<li>Incorporated custom PHP components to provide more interactivity for the readers.</li>
-									<li>Launched a local UNIX server for Perl scripts to process  and syndicate XML news feeds to MSNBC and other affiliates.</li>
-									<li>Coordinated the migration of eight regional newspapers to the Vignette content management system in six months.</li>
-									<li>Streamlined the workflow of photos for a new online photo gallery  to provide additional value to the online property. Photo gallery provided additional revenue opportunities for the Advertising Department to sell.</li> 
+                  <li>Supported lab patrons with the use of Microsoft Office suite, Photoshop, lab printing, and assistive technology.</li>
+                  <li>Trained students, faculty, and staff on the basic usage of Photoshop, Dreamweaver, and UNIX.</li>
+                  <li>Provided phone support for student e-mail, the campus network, and WebCT for distance education users.</li>
                 </ul>
               </div>
 
@@ -187,28 +136,6 @@
 					</div><!--#yui-main .yui-b-->
 				</div><!--#yui-main-->
 				<div id="sidebar" class="yui-b">
-					<div id="projects">
-						<h2>
-							Recent Projects
-						</h2>
-						<ul>
-							<li class="project-thumb" id="project-events">
-								<a href="http://events.csuchico.edu"><img src="./images/events-square.png" alt="Campus Events" /> Events Calendar</a>
-							</li>
-							<li class="project-thumb" id="project-portal">
-								<a href="https://portal.csuchico.edu"><img src="./images/portal-square.png" alt="CSUC Portal" /> Portal</a>
-							</li>
-							<li class="project-thumb" id="project-cas">
-								<a href="https://cas.csuchico.edu/cas/login"><img src="./images/cas-square.png" alt="CAS Login" /> <abbr title="Central Authentication Service">CAS</abbr> <abbr title="Single Sign-On">SSO</abbr></a>
-							</li>
-							<li class="project-thumb" id="project-search">
-								<a href="http://search.csuchico.edu"><img src="./images/search-square.png" alt="Campus Search" /> Search</a>
-							</li>
-							<li class="project-thumb" id="project-mobile">
-								<a href="http://mobile.csuchico.edu"><img src="./images/mobile-square.png" alt="Chico State Mobile" /> Chico State Mobile</a>
-							</li>
-						</ul>
-					</div><!--#projects-->
 					<div id="education">
 						<h2>
 							Education
@@ -226,7 +153,7 @@
 								<strong>Bachelor of Science in Instructional Technology</strong>
 							</p>
 							<p>
-								3.576 GPA, Honors in General Education
+								3.6 GPA, Honors in General Education
 							</p>
 						</div>
 					</div>
@@ -234,125 +161,12 @@
 						<h2>
 							Skills
 						</h2>
-						<div class="yui-g skill-set">
-						  <div class="yui-u first">
-						    <h3>Web</h3>
-						  </div>
-						  <div class="yui-u">
-								<ul>
-									<li>HTML
-									</li>
-									<li>CSS
-									</li>
-									<li>Javascript
-									</li>
-								</ul>
-						  </div>
-						</div><!--.yui-g skill-set-->
-						<div class="yui-g skill-set">
-						  <div class="yui-u first">
-						    <h3>Languages</h3>
-						  </div>
-						  <div class="yui-u">
-						    <ul>
-									<li>Ruby
-									</li>
-									<li>Perl
-									</li>
-									<li>PHP
-									</li>
-									<li>XML
-									</li>
-								</ul>
-								
-						  </div>
-						</div><!--.yui-g skill-set-->
-						<div class="yui-g skill-set">
-						  <div class="yui-u first">
-						    <h3>Frameworks</h3>
-						  </div>
-						  <div class="yui-u">
-						    <ul>
-                  <li>Rails
-                  </li>
-                  <li>YUI Grids
-                  </li>
-                  <li>Prototype JS
-                  </li>
-                </ul>
-                
-						  </div>
-						</div><!--.yui-g skill-set-->
-						<div class="yui-g skill-set">
-						  <div class="yui-u first">
-						    <h3>Database</h3>
-						  </div>
-						  <div class="yui-u">
-						    <ul>
-									<li>MySQL
-									</li>
-								</ul>
-								
-						  </div>
-						</div><!--.yui-g skill-set-->
-						<div class="yui-g skill-set">
-						  <div class="yui-u first">
-						    <h3>Web Servers</h3>
-						  </div>
-						  <div class="yui-u">
-						    <ul>
-									<li>Apache
-									</li>
-									<li>Tomcat
-									</li>
-								</ul>
-								
-						  </div>
-						</div><!--.yui-g skill-set-->
-						<div class="yui-g skill-set">
-						  <div class="yui-u first">
-						    <h3>Source Code Management</h3>
-						  </div>
-						  <div class="yui-u">
-						    <ul>
-									<li>Git
-									</li>
-									<li>Subverison
-									</li>
-								</ul>
-								
-						  </div>
-						</div><!--.yui-g skill-set-->
-						<div class="yui-g skill-set">
-						  <div class="yui-u first">
-						    <h3>Desktop Software</h3>
-						  </div>
-						  <div class="yui-u">
-						    <ul>
-									<li>Adobe Photoshop
-									</li>
-									<li>Microsoft Office
-									</li>
-								</ul>
-								
-						  </div>
-						</div><!--.yui-g skill-set-->
-						<div class="yui-g skill-set">
-						  <div class="yui-u first">
-						    <h3>Operating Systems</h3>
-						  </div>
-						  <div class="yui-u">
-								<ul>
-									<li>OS X
-									</li>
-									<li>Windows
-									</li>
-									<li>Red Hat Enterprise Linux
-									</li>
-								</ul>
-								
-						  </div>
-						</div><!--.yui-g skill-set-->
+						<p><strong>Web Technologies:</strong> HTML, CSS, Javascript, YUI Library, Prototype, jQuery, Ruby on Rails</p>
+						<p><strong>Languages:</strong> Ruby, Perl, PHP, XML</p>
+						<p><strong>Development Tools:</strong> Git, Subversion, Atlassian JIRA, Capistrano</p>
+						<p><strong>Server Applications:</strong> MySQL, Apache, Tomcat</p>
+						<p><strong>Desktop Applications: </strong>Adobe Photoshop, Atlassian Confluence, Microsoft Office</p>
+						<p><strong>Operating Systems: </strong> Mac OS X, Windows XP, Linux</p>
 					</div>
 					<div id="awards">
 						<h2>
@@ -367,14 +181,47 @@
 							</li>
 						</ul>
 					</div><!--#awards-->
+					<div id="projects">
+						<h2>
+							Recent Projects
+						</h2>
+						<ul>
+							<li class="project-thumb" id="project-events">
+								<a href="http://events.csuchico.edu"><img src="./images/events-square.png" alt="Campus Events" /> Events Calendar</a>
+							</li>
+							<li class="project-thumb" id="project-portal">
+								<a href="https://portal.csuchico.edu"><img src="./images/portal-square.png" alt="CSUC Portal" /> Portal</a>
+							</li>
+							<li class="project-thumb" id="project-cas">
+								<a href="https://cas.csuchico.edu/cas/login"><img src="./images/cas-square.png" alt="CAS Login" /> <abbr title="Central Authentication Service">CAS</abbr> <abbr title="Single Sign-On">SSO</abbr></a>
+							</li>
+							<li class="project-thumb" id="project-search">
+								<a href="http://search.csuchico.edu"><img src="./images/search-square.png" alt="Campus Search" />CSUC Search</a>
+							</li>
+							<li class="project-thumb" id="project-mobile">
+								<a href="http://mobile.csuchico.edu"><img src="./images/mobile-square.png" alt="Chico State Mobile" /> Chico State Mobile</a>
+							</li>
+						</ul>
+					</div><!--#projects-->
+					<div id="activities">
+						<h2>
+							Activities &amp; Interests
+						</h2>
+						<ul>
+              <li>Traveling</li>
+              <li>Photography</li>
+              <li>Roller Hockey</li>
+              <li>Cooking</li>
+						</ul>
+					</div><!--#projects-->
 				</div><!--.yui-b-->
 			</div><!--#bd-->
 		</div><!--#doc4-->
 	<script type="text/javascript" charset="utf-8">
 	 (function () {
-     function $(elm) { return document.getElementById(elm); }
+     // function $(elm) { return document.getElementById(elm); }
 	   if (window.location.hash.match(/debug/)) {
-	     document.getElementsByTagName("html")[0].style.setProperty("background-image","url('images/gridbg.png')")
+	     document.getElementsByTagName("html")[0].style.background ="url('images/gridbg.png')";
 	   };
 	 })();
 	</script>
